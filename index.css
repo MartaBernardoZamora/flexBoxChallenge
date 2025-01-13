@@ -9,15 +9,17 @@
   align-content: flex-start;
   gap: 0.5rem;
 }
+.container--grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 0.5rem;
+}
 .container__card {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex: 0 1 20%;
-  height: 15%;
-  min-width: 180px;
-  min-height: 100px;
   color: #fff;
   font-family: system-ui;
   font-weight: 700;
@@ -27,6 +29,12 @@
 .container__card__icon {
   font-size: 3rem;
   margin: 0;
+}
+.container__card--flex {
+  flex: 0 1 20%;
+  height: 15%;
+  min-width: 180px;
+  min-height: 100px;
 }
 .container__card--yellow {
   background-color: #f9cb54;
