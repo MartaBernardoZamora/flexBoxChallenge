@@ -1,5 +1,6 @@
 const handleCardClick = (e) => {
-    console.log(e);
+    let styleClickedCard = e.target.style;
+    styleClickedCard.opacity = styleClickedCard.opacity === "0" ? "1" : "0";
 };
 const setCard = () => {
     const cards=document.querySelectorAll('.card');
