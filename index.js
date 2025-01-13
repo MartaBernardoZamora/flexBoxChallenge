@@ -1,5 +1,6 @@
 const handleCardClick = (e) => {
-    console.log(e);
+    let styleClickedCard = e.currentTarget.firstElementChild.style;
+    styleClickedCard.visibility = styleClickedCard.visibility === "hidden" ? "initial": "hidden";
 };
 const setCard = () => {
     const cards=document.querySelectorAll('.card');
@@ -7,6 +8,4 @@ const setCard = () => {
         card.onclick=(e)=>handleCardClick(e);
     })
 }
-window.onload = () => {
-    setCard();
-};
+window.onload = () => setCard();
