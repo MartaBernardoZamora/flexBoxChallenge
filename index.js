@@ -1,5 +1,5 @@
 const handleCardClick = (e) => {
-    let styleClickedCard = e.target.style;
+    let styleClickedCard = e.currentTarget.style;
     styleClickedCard.opacity = styleClickedCard.opacity === "0" ? "1" : "0";
 };
 const setCard = () => {
