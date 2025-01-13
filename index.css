@@ -1,0 +1,48 @@
+.container {
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+}
+.container--flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.5rem;
+}
+.container__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 0 1 20%;
+  height: 15%;
+  min-width: 180px;
+  min-height: 100px;
+  color: #fff;
+  font-family: system-ui;
+  font-weight: 700;
+  border-radius: 2%;
+  box-shadow: 1px 1px 3px #adadad;
+}
+.container__card__icon {
+  font-size: 3rem;
+  margin: 0;
+}
+.container__card--yellow {
+  background-color: #f9cb54;
+  background: linear-gradient(0deg, #f9cb54 0%, #fed87c 100%);
+}
+.container__card--blue {
+  background-color: #4dbaff;
+  background: linear-gradient(0deg, #4dbaff 0%, #89d6ff 100%);
+}
+.container__card--red {
+  background-color: #d8434c;
+  background: linear-gradient(0deg, #d8434c 0%, #e37c86 100%);
+}
+.container__card--green {
+  background-color: #26ae94;
+  background: linear-gradient(0deg, #26ae94 0%, #2ad4b3 100%);
+}
+
+/*# sourceMappingURL=index.css.map */
